@@ -102,19 +102,20 @@ li
   display: flex;
   flex-flow: row wrap;
   justify-content: flex-start;
-  margin-left: 40px;
+  margin-left: 30px;
 }
 
-.promoImage {
-  width: 400px;
-  height: 300px;
+.promoImage_wrapper {
+  width: 20%;
   margin: 10px;
   padding: 10px;
-  background-color: #ccc;
+}
+.promoImage_wrapper > img {
+  width: 100%;
 }
 
 #mainFooter {
   width: 960px;
-  height: 10px;
+  height: 15px;
   background-color: rgba(13,135,226,1);
 }
