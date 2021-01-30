@@ -2,13 +2,15 @@
 // IIFE (this is the technical name)
 (() => {
 // stub
-console. log(‘JS is linked!’);
+console. log(‘fired’);
 
-let theButton = document.querySelector(“.icon-button”);
+let theBadge = document.querySelector('.PromoImage_wrapper img'),
+		theBadges = document.querySelectorAll('.PromoImage_wrapper img');
 
-function logClick() {
-	console.log(‘clicked the button!’);
+function logMe() {
+	console.log(‘clicked on an image!’);
 }
 
-theButton.addEventListener(‘click’, logClick);
-})();
+theBadge.addEventListener("click", logMe);
+theBadge.forEach(badge => badge.addEventListener("click", logMe));
+})()
